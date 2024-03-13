@@ -4,7 +4,7 @@ pipeline{
     stage ('build'){
       steps {
         echo "Building and testing ..."
-        sh 'docker build -t node-guide:latest'
+        sh 'docker build . -t node-guide:latest'
       }
     }
     stage ('Deploy') {
