@@ -7,6 +7,11 @@ pipeline{
         sh 'docker build -t node-guide:latest'
       }
     }
-    stage ('Deploy' {
+    stage ('Deploy') {
       steps {
-        sh 'docker run -d -p 3000:3000 node-guide:latest
+        sh 'docker run -d -p 3000:3000 node-guide:latest'
+      }
+    }
+  } 
+}
+        
